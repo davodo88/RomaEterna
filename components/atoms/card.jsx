@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = ({ person, who, coment }) => {
   return (
-    <div className='flex flex-col gap-y-6 bg-stone-300 p-8 md:p-6 rounded drop-shadow'>
+    <div className='flex flex-col w-full md:w-4/5 gap-y-6 bg-stone-300 p-8 md:p-6 rounded drop-shadow'>
       <h1 className='flex font-NotoSans text-center text-stone-700'>
         {coment}
       </h1>
