@@ -26,14 +26,15 @@ const Navbar = () => {
 
 
   return (
-    <>
+    <div className='
+    '>
       <button onClick={handleMenu}
-        className={classNames('fixed font-Outfit font-bold top-6 right-6 text-3xl text-Piedra',)}>
+        className={classNames('fixed font-Outfit font-bold top-4 right-6 text-3xl text-Black',)}>
         <span>
           <FontAwesomeIcon icon={menu ? faBars : faXmark} />
         </span>
       </button>
-      <ul className={classNames('fixed flex min-w-min w-[50%] gap-4 justify-around  top-0  p-4 right-[10%] transition-all ', menu ? 'opacity-0' : 'top-4')}>
+      <ul className={classNames('fixed flex min-w-min w-[50%] gap-4 justify-around  top-0  px-4 py-2 z-10 right-[10%] transition-all ', menu ? 'opacity-0' : 'top-4 bg-black rounded')}>
         {Navigation.map((navi, index) => {
           return (
             <li key={index} className='hover:scale-105  uppercase font-Outfit font-bold text-Piedra'>
@@ -48,7 +49,7 @@ const Navbar = () => {
         })}
       </ul>
 
-    </>
+    </div>
   )
 }
 

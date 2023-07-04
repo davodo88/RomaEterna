@@ -3,6 +3,7 @@ import Navbar from '../../components/navbar'
 import Image from 'next/image'
 
 import Front from '../../public/images/RomaeternaPortada2.png'
+import Link from 'next/link'
 
 
 
@@ -32,6 +33,14 @@ const page = () => {
           Unos pocos escapan, pero los hombres de Julio César y el dictador mismo los perseguirán por todo el territorio romano y fuera de él. Roma, Hispania, Egipto y Grecia, donde una misteriosa mujer, Roxana, a las órdenes del carismático líder militar griego Konstantinos, se cruzará en el camino de Julio César alimentando su sueño pendiente, conquistar Oriente y emular a Alejandro Magno. Mientras César avanza hacia su meta pendiente, las pasiones y las traiciones siguen golpeándolo como durante toda su vida. Aliados inesperados y enemigos declarados cruzan su acero con el destino de la Ciudad Eterna en juego. Grandes batallas y magníficos combates individuales se suceden en una Roma donde los conspiradores continúan agitando el avispero y en territorios a lo largo del territorio romano y más allá de él.
           Cerca de César los grandes hombres y mujeres de su tiempo y los mejores soldados de Roma se debaten entre el deber y sus convicciones. Sigue los pasos de la mítica XIII Legión y de la IX Legión Hispana hacia Oriente y vibra con Cicerón, Bruto, Cleopatra, Marco Antonio, Báculo, Servilia, Aulo Hircio, Herodes, Lucio Voreno, Tito Pullo, Orodes II y muchos más personajes históricos que protagonizan junto a memorables personajes ficticios, como Roxana o Konstantinos, la aventura que se quedó en el tintero del romano más grande de todos los tiempos: Julio César.
         </h3>
+        <div className='flex flex-col items-center justify-center gap-y-4'>
+          <p className='uppercase'>quieres conocer esta historia?</p>
+          <Link href={'https://www.amazon.es/ROMA-ETERNA-I-%C2%A1Ave-C%C3%A9sar/dp/B0C1J2GQYT'}>
+            <span className='bg-black text-Gold px-4 py-2 rounded'>
+              Amazon
+            </span>
+          </Link>
+        </div>
       </div>
     </div>
   )
